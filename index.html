@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Веб страна</title>
+    <style>
+        .custom-container {
+            background-color: #ccc; /* Боја на container-от */
+        }
+
+        .row-one {
+            background-color: #ff9999; /* Боја на првиот ред */
+        }
+
+        .row-two {
+            background-color: #99ff99; /* Боја на вториот ред */
+        }
+
+        .column {
+            background-color: #99ccff; /* Боја на секоја колона */
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 767px) {
+            .row-one {
+                order: -1; /* За мали уреди, првиот ред ќе биде прв */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container custom-container">
+        <div class="row row-one">
+            <div class="col-md-4 column">
+                <p class="text-danger">Прва колона, прв ред</p>
+            </div>
+            <div class="col-md-4 column">
+                <p class="text-primary">Основна колона, прв ред</p>
+            </div>
+            <div class="col-md-4 column">
+                <p class="text-success">Трета колона, прв ред</p>
+            </div>
+        </div>
+        <div class="row row-two">
+            <div class="col-md-4 column">
+                <p class="text-danger">Прва колона, втор ред</p>
+            </div>
+            <div class="col-md-4 column">
+                <p class="text-primary">Основна колона, втор ред</p>
+            </div>
+            <div class="col-md-4 column">
+                <p class="text-success">Трета колона, втор ред</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
