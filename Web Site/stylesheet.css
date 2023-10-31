@@ -1,4 +1,4 @@
-.row {background-color:lavender}
+
 
 .col1{
 
@@ -95,3 +95,75 @@ text-align:center;
 background-color:orange;
 
 }
+.custom-container {
+    background-color: #ccc; /* Color for the container */
+    padding: 20px;
+    margin: 20px; /* Add margins to the container */
+}
+
+.row-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #000; /* Border for the first row */
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.row-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #000; /* Border for the second row */
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.column {
+    text-align: center;
+    padding: 10px;
+    margin: 10px; /* Add margins to each column */
+    flex: 0 0 calc(33.33% - 20px); /* Equal width for columns, considering the margin */
+    max-width: calc(33.33% - 20px); /* Maximum width for columns, considering the margin */
+    border: 1px solid #000; /* Border for each column */
+    border-radius: 5px;
+}
+
+/* Add background colors to each row and column */
+.row-one .column:nth-child(1) {
+    background-color: #ff9999; /* Color for the first column in the first row */
+}
+
+.row-one .column:nth-child(2) {
+    background-color: #ffcc99; /* Color for the second column in the first row */
+}
+
+.row-one .column:nth-child(3) {
+    background-color: #ffccff; /* Color for the third column in the first row */
+}
+
+.row-two .column:nth-child(1) {
+    background-color: #99ff99; /* Color for the first column in the second row */
+}
+
+.row-two .column:nth-child(2) {
+    background-color: #99ccff; /* Color for the second column in the second row */
+}
+
+.row-two .column:nth-child(3) {
+    background-color: #ffff99; /* Color for the third column in the second row */
+}
+
+@media (max-width: 767px) {
+    .row-one {
+        order: -1; /* For small screens, make the first row appear first */
+    }
+    .row-two {
+        order: 0;
+    }
+}
+
+
+

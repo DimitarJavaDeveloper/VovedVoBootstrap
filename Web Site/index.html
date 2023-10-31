@@ -1,124 +1,96 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Веб страна</title>
+    <style>
+        .custom-container {
+            background-color: #ccc; /* Color for the container */
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #000; /* Add border to the container */
+            border-radius: 5px;
+        }
 
-<meta charset="utf-8">
+        .row {
+            justify-content: center;
+            border: 1px solid #000; /* Add border to rows */
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 10px;
+        }
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        .column {
+            text-align: center;
+            padding: 10px;
+            margin: 10px; /* Add margins to each column */
+            border: 1px solid #000; /* Add border to columns */
+            border-radius: 5px;
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+            /* Horizontal text orientation on laptops */
+            writing-mode: horizontal-tb;
+        }
 
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        /* Add background colors to each row and column */
+        .row:nth-child(odd) {
+            background-color: #ff9999; /* Color for odd rows */
+        }
 
-<title>Bootstrap</title>
+        .row:nth-child(even) {
+            background-color: #99ff99; /* Color for even rows */
+        }
 
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        .column:nth-child(1) {
+            background-color: #ffcc99; /* Color for the first column in each row */
+        }
 
-<link href="stylesheet.css" rel="stylesheet">
+        .column:nth-child(2) {
+            background-color: #ffccff; /* Color for the second column in each row */
+        }
 
+        .column:nth-child(3) {
+            background-color: #99ccff; /* Color for the third column in each row */
+        }
+
+        /* Media query for mobile screens */
+        @media (max-width: 767px) {
+            .column {
+                /* Vertical text orientation on mobile */
+                writing-mode: vertical-rl;
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <div class="container custom-container">
+        <div class="row flex-column"> <!-- Use "flex-column" to stack rows on mobile -->
+            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
+                <p class="text-danger">Прва колона, прв ред</p>
+            </div>
+            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
+                <p class="text-primary">Основна колона, прв ред</p>
+            </div>
+            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
+                <p class="text-success">Трета колона, прв ред</p>
+            </div>
+        </div>
+        <div class="row flex-column"> <!-- Use "flex-column" to stack rows on mobile -->
+            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
+                <p class="text-danger">Прва колона, втор ред</p>
+            </div>
+            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
+                <p class="text-primary">Основна колона, втор ред</p>
+            </div>
+            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
+                <p class="text-success">Трета колона, втор ред</p>
+            </div>
+        </div>
+    </div>
 
-<div class="container">
-
-<div class="row">
-
-<div>
-
-<h1>H1 Heading</h1>
-
-<h2>H2 Heading <small> Secondary text </small></h2>
-
-<h3 class="text-hide">H3 hide Heading</h3>
-
-<h3>H3 Heading</h3>
-
-<p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-
-nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
-<p> <span class="lead"> Lorem ipsum dolor </span> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-
-nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
-<p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-
-nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
-H1 heading, Bootstrap користи 36 пиксели фонт BOLD
-
-H2 heading, Bootstrap
-користи 30 пиксели фонт
-BOLD
-
-H3 heading, Bootstrap користи 24 пиксели фонт BOLD
-
-<small> овозможува креирање на поднаслов(subheading)
-
-“text-hide“ класата овозможува прикривање на текстот
-
-class=“lead”, овозможува да се презентира парагафот како
-главен во однос на текстот
-
-тагот овозможува да се презентира текстот во <span>
-како главен во однос на останатиот
-
-тагот овозможува да се постави текстот во центар
-<p class="text-nowrap"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-
-nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
-<p class="small"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-
-nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
-<script src="jquery.min.js"></script>
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-
-<script src="bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
-
 </html>
