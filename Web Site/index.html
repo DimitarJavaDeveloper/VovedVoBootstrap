@@ -1,96 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <title>Веб страна</title>
-    <style>
-        .custom-container {
-            background-color: #ccc; /* Color for the container */
-            padding: 20px;
-            margin: 20px;
-            border: 1px solid #000; /* Add border to the container */
-            border-radius: 5px;
-        }
-
-        .row {
-            justify-content: center;
-            border: 1px solid #000; /* Add border to rows */
-            border-radius: 5px;
-            margin: 10px 0;
-            padding: 10px;
-        }
-
-        .column {
-            text-align: center;
-            padding: 10px;
-            margin: 10px; /* Add margins to each column */
-            border: 1px solid #000; /* Add border to columns */
-            border-radius: 5px;
-
-            /* Horizontal text orientation on laptops */
-            writing-mode: horizontal-tb;
-        }
-
-        /* Add background colors to each row and column */
-        .row:nth-child(odd) {
-            background-color: #ff9999; /* Color for odd rows */
-        }
-
-        .row:nth-child(even) {
-            background-color: #99ff99; /* Color for even rows */
-        }
-
-        .column:nth-child(1) {
-            background-color: #ffcc99; /* Color for the first column in each row */
-        }
-
-        .column:nth-child(2) {
-            background-color: #ffccff; /* Color for the second column in each row */
-        }
-
-        .column:nth-child(3) {
-            background-color: #99ccff; /* Color for the third column in each row */
-        }
-
-        /* Media query for mobile screens */
-        @media (max-width: 767px) {
-            .column {
-                /* Vertical text orientation on mobile */
-                writing-mode: vertical-rl;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container custom-container">
-        <div class="row flex-column"> <!-- Use "flex-column" to stack rows on mobile -->
-            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
-                <p class="text-danger">Прва колона, прв ред</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <p class="text-primary">Прва колона</p>
             </div>
-            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
-                <p class="text-primary">Основна колона, прв ред</p>
+            <div class="col-sm-4 col-md-4 col-lg-4 main-column">
+                <p class="text-success">Основна колона</p>
             </div>
-            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
-                <p class="text-success">Трета колона, прв ред</p>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <p class="text-danger">Трета колона</p>
             </div>
         </div>
-        <div class="row flex-column"> <!-- Use "flex-column" to stack rows on mobile -->
-            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
-                <p class="text-danger">Прва колона, втор ред</p>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 main-column">
+                <p class="text-warning">Прва колона</p>
             </div>
-            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
-                <p class="text-primary">Основна колона, втор ред</p>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <p class="text-info">Основна колона</p>
             </div>
-            <div class="col-12 col-md-4 column"> <!-- Use "col-12" to make full width on mobile -->
-                <p class="text-success">Трета колона, втор ред</p>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <p class="text-secondary">Трета колона</p>
             </div>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

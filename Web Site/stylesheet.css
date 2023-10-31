@@ -164,6 +164,23 @@ background-color:orange;
         order: 0;
     }
 }
+.container {
+    background-color: lightgray; /* Боја на container класата */
+    padding: 10px;
+}
+
+.row {
+    background-color: lightblue; /* Боја на редовите */
+    margin-bottom: 10px;
+}
+
+.col-sm-4 {
+    background-color: lightyellow; /* Боја на колоните за мали уреди */
+}
+
+.main-column {
+    background-color: lightgreen; /* Боја на основната колона */
+}
 
 
 
