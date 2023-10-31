@@ -1,91 +1,51 @@
-.row {background-color:lavender}
-
-.col1{
-
-margin:3px;
-
-min-height:300px;
-
-text-align:center;
-
-background-color:silver;
-
+/* Стили за навигационото мени */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
 }
 
-.col2{
-
-margin:3px;
-
-min-height:300px;
-
-text-align:center;
-
-background-color:#faebd7;
-
+.menu li {
+    margin: 0 10px;
 }
 
-.col3{
-
-margin:3px;
-
-min-height:300px;
-
-text-align:center;
-
-background-color:skyblue;
-
+.menu a {
+    text-decoration: none;
 }
 
-.col4{
-
-margin:3px;
-
-min-height:300px;
-
-text-align:center;
-
-background-color:red;
-
+/* Стили за паѓачкото мену */
+.dropdown {
+    position: relative;
 }
 
-.col5{
-
-margin:3px;
-
-min-height:300px;
-
-text-align:center;
-
-background-color:darkgreen;
-
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f0f0;
+    list-style: none;
+    padding: 0;
 }
 
-.col6{
-
-margin:3px;
-
-min-height:300px;
-
-text-align:center;
-
-background-color:orange;
-
+.dropdown-menu li {
+    padding: 10px;
 }
 
-.col7{
-
-margin:3px;
-
-min-height:300px;
-
-text-align:center;
-
-background-color:beige;
-
+/* Стили за divider класата */
+.divider {
+    border-top: 1px solid #999;
+    margin: 5px 0;
 }
 
-#test{
+/* Стили за лого и копчето за пребарување */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
 
-margin:5px;
-
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
