@@ -1,1 +1,129 @@
-.caption {font-weight:bold}
+/* Основен стил на страницата */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стил на навигациско мени */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Стил на текстуално лого */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Стил на копче за пребарување */
+.search-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Стил на паѓачко мени */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-header {
+    font-weight: bold;
+    background-color: #f1f1f1;
+    padding: 10px 16px;
+}
+
+.divider {
+    border-top: 1px solid #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Стил на секцијата со сликата и текстот */
+.main-section {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.centered-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Стил на секцијата со слики и текст */
+.image-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image-block {
+    text-align: center;
+}
+
+.image-block img {
+    max-width: 100%;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.image-overlay a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Стил на насловите за сликите */
+.image-section p {
+    font-size: 18px;
+    margin-top: 10px;
+}

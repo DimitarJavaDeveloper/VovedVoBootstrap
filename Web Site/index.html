@@ -1,86 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head
-content must come *after* these tags -->
-<title>Bootstrap 101 Template</title>
-<!-- Bootstrap -->
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="stylesheet.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome Page</title>
 </head>
 <body>
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-2 col-xs-3">
-<div class="thumbnail">
-<a href="аrch.png">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Копче 1</a></li>
+                <li><a href="#">Копче 2</a></li>
+                <li><a href="#">Копче 3</a></li>
+            </ul>
+        </nav>
+        <div class="logo">Текстуално лого</div>
+        <div class="search-button">
+            <img src="search-icon.png" alt="Пребарување">
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Паѓачко мену</button>
+            <div class="dropdown-content">
+                <div class="dropdown-header">Хедер 1</div>
+                <a href="#">Опција 1</a>
+                <a href="#">Опција 2</a>
+                <div class="divider"></div>
+                <div class="dropdown-header">Хедер 2</div>
+                <a href="#">Опција 3</a>
+                <a href="#">Опција 4</a>
+            </div>
+        </div>
+    </header>
 
-<!-- <img
+    <section class="main-section">
+        <img src="background-image.jpg" alt="Позадина">
+        <div class="centered-text">
+            <p>It is not perfect...It is paradise</p>
+        </div>
+    </section>
 
-src="https://upload.wikimedia.org/wikipedia/commons/3/30/Gateway_Arch_%28distant_
-view%29.jpg" class="img-responsive" alt="St. Louis Arch"></img> -->
-<img src="аrch.png" class="img-responsive" alt="St. Louis Arch"></img
-<div class="caption">
-This is the St. Louis Arch
-</div>
-</div>
-</div>
-
-<div class="col-md-2 col-xs-3">
-<div class="thumbnail">
-<a href="Waldorf.jpg">
-
-<img src="Waldorf.jpg" class="img-responsive" alt="St. Louis Arch"></img>
-<div class="caption">
-This is the St. Louis Arch
-</div>
-</div>
-</div>
-
-<div class="col-md-2 col-xs-3">
-<div class="thumbnail">
-<a href="аrch.png">
-
-<img src="аrch.png" class="img-responsive" alt="St. Louis Arch"></img>
-
-<div class="caption">
-This is the St. Louis Arch
-</div>
-</div>
-</div>
-<div class="col-md-2 col-xs-3">
-<div class="thumbnail">
-<a href="аrch.png">
-
-<img src="аrch.png" class="img-responsive" alt="St. Louis Arch"></img>
-
-<div class="caption">
-This is the St. Louis Arch
-</div>
-</div>
-</div>
-<div class="col-md-2 col-xs-3">
-<div class="thumbnail">
-<a href="аrch.png">
-
-<img src="аrch.png" class="img-responsive" alt="St. Louis Arch"></img>
-
-<div class="caption">
-This is the St. Louis Arch
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual
-files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+    <section class="image-section">
+        <div class="image-block">
+            <img src="image1.jpg" alt="Слика 1">
+            <div class="image-overlay">
+                <a href="https://www.facebook.com/">Поврзи се со FB</a>
+            </div>
+            <p>Наслов за слика 1</p>
+        </div>
+        <div class="image-block">
+            <img src="image2.jpg" alt="Слика 2">
+            <div class="image-overlay">
+                <a href="https://www.facebook.com/">Поврзи се со FB</a>
+            </div>
+            <p>Наслов за слика 2</p>
+        </div>
+    </section>
 </body>
 </html>
